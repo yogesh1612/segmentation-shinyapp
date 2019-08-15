@@ -132,7 +132,7 @@ shinyServer(function(input, output){
             }) %>%
             kable(escape = F, align = "c") %>%
             kable_styling(c("striped", "condensed"), full_width = F)%>%
-          footnote(general = "Mean value of all variables within each cluster. ")
+          footnote(general = "Table shows mean value of all variables within each cluster. ")
           return(Summary)
         }
       })  
