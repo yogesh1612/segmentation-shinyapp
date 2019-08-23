@@ -2,18 +2,18 @@
 #      Marketing Segmentation                      #
 ####################################################
 
+# library('devtools')
+# library('shiny')
+library('cluster')
+library('ggbiplot')
+library('mclust')
+library('MASS')
+library('kableExtra')
+library('ggplot2')
+library('scales')
+library('gridExtra')
+library('data.table')
 
-try(require("devtools")||install.packages("devtools"))
-try(require("shiny")||install.packages("shiny"))
-try(require("cluster")||install.packages("cluster"))
-try(require("ggbiplot")||install_github("ggbiplot"))
-try(require("mclust")||install.packages("mclust"))
-try(require("MASS")||install.packages("MASS"))
-try(require("kableExtra")||install.packages("kableExtra"))
-try(require("ggplot2")||install.packages("ggplot2"))
-try(require("scales")||install.packages("scales"))
-try(require("gridExtra")||install.packages("gridExtra"))
-try(require("data.table")||install.packages("data.table"))
 
 
 
