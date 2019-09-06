@@ -1,21 +1,19 @@
-try(require("shiny")||install.packages("shiny"))
-try(require("devtools")||install.packages("devtools"))
-try(require("ggplot2")||install.packages("ggplot2"))
-try(require("plyr")||install.packages("plyr"))
-try(require("scales")||install.packages("scales"))
-try(require("grid")||install.packages("grid"))
+if (!require("shiny")} {install.packages("shiny")}
+if (!require("devtools")} {install.packages("devtools")}
+if (!require("ggplot2")} {install.packages("ggplot2")}
+if (!require("dplyr")} {install.packages("dplyr")}
+# if (!require("plyr")} {install.packages("plyr")}
+if (!require("scales")} {install.packages("scales")}
+if (!require("grid")} {install.packages("grid")}
+if (!require("cluster")} {install.packages("cluster")}
+if (!require("mclust")} {install.packages("mclust")}
+if (!require("MASS")} {install.packages("MASS")}
 
-try(require("cluster")||install.packages("cluster"))
-try(require("mclust")||install.packages("mclust"))
-try(require("MASS")||install.packages("MASS"))
-try(require("devtools")||install.packages("devtools"))
-library("devtools")
+# if (!require("ggbiplot")} {install_github("ggbiplot","vqv")}
 
-try(require("ggbiplot")||install_github("ggbiplot","vqv"))
-
-try(require("ggplot2")||install.packages("ggplot2"))
-try(require("scales")||install.packages("scales"))
-try(require("gridExtra")||install.packages("gridExtra"))
+ if (!require("ggplot2")} {install.packages("ggplot2")}
+if (!require("scales")} {install.packages("scales")}
+if (!require("gridExtra")} {install.packages("gridExtra")}
 
 library("shiny")
 library("cluster")
