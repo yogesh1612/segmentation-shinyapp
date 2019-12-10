@@ -131,7 +131,7 @@ shinyServer(function(input, output){
             group_by(Segment.Membership) %>%
             summarize_all(.funs = list(mean)) %>%
             arrange(Segment.Membership) %>%
-            round(2)%>%
+            round(2)%>%t()%>%
            # mutate_if(is.numeric, function(x) {
             #  cell_spec(x, bold = T, 
              #           color = spec_color(x, end = 0.9),
