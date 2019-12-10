@@ -131,11 +131,11 @@ shinyServer(function(input, output){
             summarize_all(.funs = list(mean)) %>%
             arrange(Segment.Membership) %>%
             round(2)%>%
-            mutate_if(is.numeric, function(x) {
-              cell_spec(x, bold = T, 
-                        color = spec_color(x, end = 0.9),
-                        font_size = spec_font_size(x,begin = 14,end = 20))
-            }) %>%
+           # mutate_if(is.numeric, function(x) {
+            #  cell_spec(x, bold = T, 
+             #           color = spec_color(x, end = 0.9),
+              #          font_size = spec_font_size(x,begin = 14,end = 20))
+            #}) %>%
             kable(escape = F, align = "c") %>%
             kable_styling(c("striped", "condensed"), full_width = F)%>%
           footnote(general = "Mean value of all variables within each cluster. ")
